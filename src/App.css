@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+:root {
+  --color1: #A9C9FF;
+  --color2: #3A506B;
+  --color3: #E0E7FF;
+  --color4: #5C677D;
+  --color5: #1C2541;
+}
+
+#root {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(250deg, var(--color2), var(--color1));
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px 10vw;
+  background: linear-gradient(135deg, var(--color1), var(--color2));
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.header .left {
+  flex: 1;
+  text-align: left;
+}
+
+.header .left h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color5);
+  margin: 0 0 15px;
+}
+
+.header .left h1 .highlight {
+  color: var(--color2);
+}
+
+.header .left h2.role {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--color3);
+}
+
+.header .left h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--color4);
+  margin-bottom: 10px;
+}
+
+.header .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid var(--color3);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.bodyContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.bodyContent .left,
+.bodyContent .right {
+  flex: 1;
+  max-width: 50%;
+}
+
+.bodyContent .left {
+  text-align: center;
+}
+
+.bodyContent .left h1 {
+  font-size: 42px;
+  color: var(--color5);
+}
+
+.bodyContent .left .highlight {
+  color: var(--color2);
+}
+
+.bodyContent .right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.bodyContent .card {
+  background-color: var(--color3);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bodyContent .card h1 {
+  margin-bottom: 10px;
+  color: var(--color2);
+  font-size: 22px;
+}
+
+.bodyContent .card p {
+  color: darkblue;
+  line-height: 1.6;
+}
+
+.faqContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.faqTitle {
+  text-align: center;
+  font-size: 42px;
+  color: var(--color5);
+  margin-bottom: 20px;
+}
+
+.section {
+  background-color: var(--color3);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  color: var(--color2);
+  font-size: 22px;
+}
+
+.section p {
+  color: darkblue;
+  line-height: 1.6;
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--color4);
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.footer p {
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
